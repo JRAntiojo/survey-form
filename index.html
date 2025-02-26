@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+  
+<body>
+  <h1 id="title">♫♪♬ SURVEY FORM ♬♪♫</h1>
+  <div class="survey">
+    <form id="survey-form">
+      
+      <div>
+        <p id="description">PERSONAL INFORMATION:</p>
+        <fieldset>
+          <label id="name-label" for="name" class="bold-text">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+          <label id="email-label" for="email" class="margin" >Email: <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
+          <label id="number-label" for="number" class="margin" >Age: <span class="small-text">(optional)</span> <input id="number" name="number" type="number" min="10" max="120" placeholder="Enter your age" ></label>
+          <label id="dropdown-label" class="margin" >Current Occupation:
+            <select id="dropdown">
+              <option value="">(Select an option)</option>
+              <option value="1">Student</option>
+              <option value="2">Worker</option>
+              <option value="3">Prefer not to say</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+        </fieldset>
+      </div>
+
+      <div>
+        <p id="description">SURVEY QUESTIONS:</p>
+        
+        <fieldset>
+          <legend class="bold-text">Do you listen to music?</legend>
+          <label><input id="music" type="radio" name="music" value="yes" class="inline" />Yes</label>
+          <label><input id="music" type="radio" name="music" value="no" class="inline" />No</label>
+        </fieldset>
+
+        <fieldset>
+          <legend class="bold-text">How often do you listen to music?</legend>
+          <label><input id="listen" type="radio" name="listen" value="never" class="inline" />Never</label>
+          <label><input id="listen" type="radio" name="listen" value="sometimes" class="inline" />Sometimes</label>
+          <label><input id="listen" type="radio" name="listen" value="often" class="inline" />Often</label>
+          <label><input id="listen" type="radio" name="listen" value="always" class="inline" />Always</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend class="bold-text">Which music genres do you enjoy? <span class="small-text"
+          >(Check all that apply)</span> </legend>
+          <label><input id="genre" type="checkbox" value="1" class="inline" />Pop</label>
+          <label><input id="genre" type="checkbox" value="2" class="inline" />Rock</label>
+          <label><input id="genre" type="checkbox" value="3" class="inline" />Jazz</label>
+          <label><input id="genre" type="checkbox" value="4" class="inline" />Hip-Hop</label>
+          <label><input id="genre" type="checkbox" value="5" class="inline" />Classical</label>
+          <label><input id="genre" type="checkbox" value="6" class="inline" />Other</label>
+        </fieldset>
+        
+        <fieldset>
+          <label for="suggestion" class="bold-text">Suggestions:
+            <textarea id="suggestion" name="suggestion" rows="3" cols="30" placeholder="Enter your thoughts..."></textarea>
+          </label>
+        </fieldset>
+      </div>
+
+      <div>
+        <input id="submit" type="submit" value="SUBMIT" />
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
